@@ -19,17 +19,17 @@ This project contains SQL queries designed to answer four assessment questions u
 
 ## Key Concepts & Notes
 
-    Anchor Table: In questions where metrics are calculated per customer, users_custom_user is used as the anchor table.
+    1. Anchor Table: In questions where metrics are calculated per customer, users_custom_user is used as the anchor table.
 
-    CTEs (Common Table Expressions): Used to structure queries in stages, e.g., calculating transactions, categorizing frequency, or computing months active.
+    2. CTEs (Common Table Expressions): Used to structure queries in stages, e.g., calculating transactions, categorizing frequency, or computing months active.
 
-    Joins: Left joins are used carefully to ensure all relevant records are included, particularly when some tables may not have transactions.
+    3. Joins: Left joins are used carefully to ensure all relevant records are included, particularly when some tables may not have transactions.
 
-    Aggregates & Grouping: COUNT, SUM, MIN, MAX and other aggregates are used along with GROUP BY to summarize per customer or frequency category.
+    4. Aggregates & Grouping: COUNT, SUM, MIN, MAX and other aggregates are used along with GROUP BY to summarize per customer or frequency category.
 
-    Handling Nulls & Zero Values: COALESCE and CASE WHEN functions are used to avoid errors in calculations and ensure meaningful results.
+    5. Handling Nulls & Zero Values: COALESCE and CASE WHEN functions are used to avoid errors in calculations and ensure meaningful results.
 
-    Formatting: Dollar values are formatted with comma separators for readability.
+    6. Formatting: Dollar values are formatted with comma separators for readability.
 
 
 ## SQL Syntax & Conventions
